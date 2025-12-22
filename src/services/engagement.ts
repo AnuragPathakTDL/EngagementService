@@ -81,8 +81,7 @@ export function upsertProgress(
     typeof payload.isCompleted === "boolean"
       ? payload.isCompleted
       : watchedDuration >= totalDuration;
-  const lastWatchedAt =
-    payload.lastWatchedAt ?? new Date().toISOString();
+  const lastWatchedAt = payload.lastWatchedAt ?? new Date().toISOString();
 
   const entry: ContinueWatchProgress = {
     userId: payload.userId,

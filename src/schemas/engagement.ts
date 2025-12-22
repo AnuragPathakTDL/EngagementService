@@ -48,6 +48,4 @@ export type EngagementEventMetrics = z.infer<
 >;
 export type ContinueWatchUpsert = z.infer<typeof continueWatchUpsertSchema>;
 export type ContinueWatchQuery = z.infer<typeof continueWatchQuerySchema>;
-export type ContinueWatchResponse = z.infer<
-  typeof continueWatchResponseSchema
->;
+export type ContinueWatchResponse = z.infer<typeof continueWatchResponseSchema>;
